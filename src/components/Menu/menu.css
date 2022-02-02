@@ -1,0 +1,39 @@
+.menu {
+  position: absolute;
+  top: 35px;
+  right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 500px;
+  column-gap: 18px;
+}
+
+.meus_links {
+  background: #ffffff;
+  border-radius: 8.38509px;
+  padding: 10px 0;
+  max-width: 225px;
+  width: 100%;
+  margin-left: 37px;
+  color: #000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: none;
+  transition: all ease 0.3s;
+  text-decoration: none;
+}
+
+.meus_links:hover {
+  filter: brightness(0.9);
+}
+.menu > a {
+  transition: all ease 0.3s;
+}
+.menu > a:hover {
+  transform: scale(1.1);
+}

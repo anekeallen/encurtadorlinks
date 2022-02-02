@@ -1,14 +1,17 @@
-
 import {FiLink} from "react-icons/fi";
 
 import "./home.css"
+import "../../styles.less"
+import Menu from "../../components/Menu";
 
 
 function Home() {
 
   return(
-    <div className="container">
 
+    
+    <div className="container">
+      <Menu></Menu>
       <div className="logo">
         <img src="/logo.png" alt="" />
         <h1>AnekeLink</h1>
