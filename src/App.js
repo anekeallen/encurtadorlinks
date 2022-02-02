@@ -1,10 +1,15 @@
 
+import RoutesApp from "./routes";
 
 function App() {
+
   return (
-    <div className="">
-      
+    
+    <div className="app">
+      <RoutesApp />
+
     </div>
+  
   );
 }
 
