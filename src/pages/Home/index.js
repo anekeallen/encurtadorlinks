@@ -1,11 +1,21 @@
 import {FiLink} from "react-icons/fi";
 
+import  { useState } from 'react';
+
+
 import "./home.css"
 import "../../styles.less"
 import Menu from "../../components/Menu";
 
 
 function Home() {
+
+  const [link, setLink] = useState("");
+
+  function handleClick(params) {
+    alert("clicou");
+    
+  }
 
   return(
 
@@ -21,9 +31,14 @@ function Home() {
       <div className="footer">
       <div className="container-input">
         <FiLink size={24} color="#fff" />
-        <input placeholder="Cole seu link aqui..." type="text" />
+        <input 
+        placeholder="Cole seu link aqui..." 
+        type="text"
+        value={link} 
+        onChange={({target})=> setLink(target.value) }/>
       </div>
-      <button className="gerar_link">Gerar link</button>
+      {link}
+      <button onClick={handleClick} className="gerar_link">Gerar link</button>
 
       </div>
 
