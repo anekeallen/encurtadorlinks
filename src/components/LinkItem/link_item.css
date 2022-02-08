@@ -1,0 +1,59 @@
+.container-modal {
+  background: #ffffff;
+  color: #000;
+  border-radius: 4px;
+  max-width: 1063px;
+  width: 100%;
+  padding: 33px 48px;
+  margin-top: 70px;
+  position: absolute;
+  bottom: 0px;
+  animation: slideY 1.5s;
+  overflow: hidden;
+}
+
+@keyframes slideY {
+  from {
+    transform: translateY(90px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+.titulo {
+  display: flex;
+  justify-content: space-between;
+}
+.titulo h2 {
+  color: #161616;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.link_total {
+  color: #a7a7a7;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.link_encurtado {
+  background: #172742;
+  border-radius: 7px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 49px;
+  padding: 0 16px;
+  width: 100%;
+}
